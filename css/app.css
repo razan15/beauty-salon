@@ -1,0 +1,523 @@
+body {
+  margin: 0;
+  width: 100%;  
+}
+#socialIcons {
+    position:fixed;
+    display: grid;
+    left: 0;
+    top: 16em;
+    left: 1em;
+    justify-items: center;
+    z-index: 7;
+}
+.social {
+    width: 50px;
+    height: 50px;
+}
+#grid {
+    display: grid;
+    width: 100%;
+    background-color:rgb(243, 241, 234);
+    grid-template-columns: repeat(14, 1fr);
+    grid-auto-rows: minmax(60px, auto);
+    grid-template-areas:
+    " .   .   .   .   .   .   .   .   .   .   .   .   .   . " 
+    " .  log log log nav nav nav nav nav nav nav nav nav  . "
+    " .  hom hom hom hom hom hom hom hom hom hom hom hom  . "
+    " .   .  abt abt abt abt abt abt abt abt abt abt  .   . "
+    " .  ser ser ser ser ser ser ser ser ser ser ser ser  . "
+    " .  ser ser ser ser ser ser ser ser ser ser ser ser  . "
+    " .  ser ser ser ser ser ser ser ser ser ser ser ser  . "
+    " .  fac fac fac fac fac fac fac fac fac fac fac fac  . "
+    " .  txt txt txt txt txt txt txt txt txt txt txt txt  . "
+    " .  ofr ofr ofr ofr ofr ofr ofr ofr ofr ofr ofr ofr  . "
+    " .  ofr ofr ofr ofr ofr ofr ofr ofr ofr ofr ofr ofr  . "
+    " .  ofr ofr ofr ofr ofr ofr ofr ofr ofr ofr ofr ofr  . "
+    " .  ext ext ext ext ext ext ext ext ext ext ext ext  . "
+    " .  ftr ftr ftr ftr ftr ftr ftr ftr ftr ftr ftr ftr  . "
+    " .  ftr ftr ftr ftr ftr ftr ftr ftr ftr ftr ftr ftr  . "
+    " .  ftr ftr ftr ftr ftr ftr ftr ftr ftr ftr ftr ftr  . "
+    " .  ftr ftr ftr ftr ftr ftr ftr ftr ftr ftr ftr ftr  . "
+    " .  ftr ftr ftr ftr ftr ftr ftr ftr ftr ftr ftr ftr  . "
+    " .  ftr ftr ftr ftr ftr ftr ftr ftr ftr ftr ftr ftr  . "
+    " .  cop cop cop cop cop cop cop cop cop cop cop cop  . "
+    ;
+}
+#logo {
+    display: grid;
+    grid-area: log;
+    color: black;
+    background-color: rgb(202, 61, 36);
+    justify-items: center; 
+}
+#logo >h1 {
+    font-family: 'Dancing Script', cursive;
+    font-size: 2.2em;
+    margin-top: 5px;
+    animation-name: test;
+    animation-duration: 3s;
+}
+@keyframes test {
+    from {font-size: 2.2em;}
+    to {font-size: 3.2em;}
+}
+#logo >h3 {
+    font-size: 1em;
+    margin-top: -25px;
+    margin-bottom: 0;
+    color: black;
+    animation-name: example;
+    animation-duration: 4s;
+}
+@keyframes example {
+    from {color:black;}
+    to {color: beige;}
+}
+#nav {
+    display: flex;
+    grid-area: nav;
+    background-color: rgb(194, 130, 88);
+    justify-content:space-evenly;
+    align-items: center;
+}
+a {
+    text-decoration: none;
+    font-size: 1.6rem;
+    color: rgb(17, 1, 1);
+}
+a:hover {
+    color:rgb(20, 223, 71);
+}
+#home {
+    display: grid;
+    grid-area: hom;
+    background-color: rgb(238, 232, 155);
+    overflow: hidden; 
+}
+#home >h1 {
+    font-size: 4em;
+    font-weight: 900;
+    display: inline-block;
+    position: absolute;
+    top:300px;
+    left:10%;
+    color: blanchedalmond;
+    animation: mymove 5s infinite;
+    animation-timing-function: welcome;
+}
+#home >h3 {
+    font-size: 2.6em;
+    font-weight: 900;
+    display: inline-block;
+    position: absolute;
+    top:420px;
+    left:10%;
+    color: blanchedalmond;
+    animation: mymove 3s infinite;
+    animation-timing-function: to our center;
+}
+@keyframes mymove {
+    from{left: 0px;}
+    to{left: 250px;}
+}
+/* carousel */
+.mySlides {
+    scroll-behavior: smooth;
+  }
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 70%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    margin-left: 7%;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+  /* Position the "next button" to the right */
+.next {
+    float:left;
+    margin-left: calc(90% - 6px);
+    border-radius: 3px 0 0 3px;
+  }
+  .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+  }
+  /* The dots */
+.dot {
+    display: inline-block;
+    grid-area: hom;
+    position: relative;
+    top: 160px;
+    left:590px;
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    transition: background-color 0.6s ease;
+  }
+  .active, .dot:hover {
+    background-color: #717171;
+  }
+#about {
+    display: grid;
+    grid-area: abt;
+    text-align: justify;
+    background-color: rgba(228, 185, 145, 0.685); 
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: minmax(100px, auto);
+    grid-template-areas:
+    " lon con "; 
+}
+.content {
+    grid-area: con;
+    width: 100%;
+    text-align: justify;
+}
+.content >h1 {
+    font-family: 'Dancing Script', cursive;
+    font-size: 2.0em;
+    justify-items: center;
+    margin-top:120px;
+    margin-left: 150px;
+    text-align: justify; 
+}
+.content >p {
+    font-family: 'Dancing Script', cursive;
+    justify-items: center;
+    text-align: justify;
+    font-size: 1.6em;
+    margin-top: 60px;
+    margin-left: 80px;
+    text-indent: 50px;
+    line-height: 40px;
+}
+#longImg {
+    grid-area: lon;
+    width: 100%;
+    align-items: center;
+    justify-items: center;
+    margin-bottom: 70px;
+    margin-top: -70px;   
+}
+#services {
+    width:100%;
+    display: grid;
+    grid-area: ser;
+    justify-items: center;
+    align-items: center;
+    background-color: rgb(202, 127, 83);
+}
+#services >h1 {
+    font-size: 2em;
+    color:black;
+}
+#facilities {
+    width: 100%;
+    grid-area: fac;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: minmax(100, auto);
+    grid-template-areas:
+    "cut col fce mes";
+}
+#hairCut {
+    width: 100%;
+    grid-area: cut;
+    align-self: center;
+    justify-self: center;
+}
+#color {
+    width: 100%;
+    grid-area: col;
+    align-self: center;
+    justify-self: center;
+}
+#facial {
+    width: 100%;
+    grid-area: fce;
+    align-self: center;
+    justify-self: center;
+}
+#message {
+    width: 100%;
+    grid-area: mes;
+    align-self: center;
+    justify-self: center;
+}
+.cover {
+    width: 250px;
+    height: 200px;
+    margin: 10px;
+    float:left;
+    overflow: hidden;
+    position:relative;
+    text-align: center;
+    cursor: default;  
+}
+.cover .mask, .cover .content {
+    width: 250px;
+    height: 200px;
+    position: absolute;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+}
+.cover img {
+    display: block;
+    position: relative;
+}
+.cover h2 {
+    text-transform: uppercase;
+    color:#fff;
+    text-align: center;
+    position: relative;
+    font-size: 17px;
+    padding: 10px;
+    background: #000;
+    margin: 40px 0 0 0;
+}
+.cover p {
+    font-size: 12px;
+    position: relative;
+    color:#fff;
+    padding: 10px 20px 20px;
+    text-align: center;
+}
+.cover-one img {
+    transition: all 0.2s liner;
+}
+.cover-one .mask {
+    opacity: 0;
+    background-color: rgba(82, 76, 70, 0.8); 
+    transition: all 0.4s ease-in-out;
+}
+.cover-one h2 {
+    transform: translateY(-100px);
+    opacity: 0;
+    transition: all 0.2s ease-in-out;
+}
+.cover-one p { 
+    transform: translateY(100px);
+    opacity: 0;
+	transition: all 0.2s linear;
+}
+.cover-one:hover img { 
+	transform: scale(1.1);
+} 
+.cover-one:hover .mask { 
+	opacity: 1;
+}
+.cover-one:hover h2,
+.cover-one:hover p {
+    opacity: 1;
+    transform: translateY(0px);
+}
+.cover-one:hover p {
+    transition-delay: 0.1s;
+}
+#text{
+    display: flex;
+    grid-area: txt;
+    justify-content: space-evenly;
+    background-color: rgb(14, 11, 11);
+}
+#text >h1 {
+    display: flex;
+    font-size: 1.8em; 
+    align-items: center;
+    color: rgb(110, 103, 103);
+}
+#offers {
+    display: grid;
+    grid-area: ofr;
+    background-color: rgb(199, 158, 110);
+    justify-content: center;
+    align-items: center;
+}
+#offers >h1 {
+    font-size: 2em;   
+}
+#extraFacilities {
+    display: grid;
+    grid-area: ext;
+    width: 100%;
+    align-self: center;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: minmax(100, auto);
+    grid-template-areas:
+    "pic pic pic";
+}
+.pictures {
+    grid-area: pic;
+    width: 100%;
+    text-align: center;   
+}
+.extra {
+    align-self: center;
+    justify-self: center; 
+}
+footer {
+    display:grid;
+    grid-area: ftr;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: minmax(150px, auto);
+    grid-template-areas:
+        "lef mid rit";
+}
+.leftFooter {
+    display: grid;
+    grid-area: lef;
+    justify-items: center;
+    border-right: 1px solid rgb(196, 184, 184);
+    padding-top: 50px;
+    background-color:rgb(179, 152, 118);
+}
+.leftFooter >h1 {
+    margin-top: 10px;
+}
+.leftFooter >h3 {
+    margin-top: -20px;
+    margin-bottom: -10px;
+    font-size: 1em;
+}
+#map {
+    margin-bottom:15px;
+    border-radius: 15px;
+}
+#map iframe{
+    grid-area: lef;
+    justify-content: center;
+}
+.middleFooter {
+    grid-area: mid;
+    justify-content: center;
+    border-right: 1px solid rgb(196, 184, 184);
+    text-align: center;
+    padding-top: 50px;
+    background-color:rgb(179, 152, 118);
+}
+.middleFooter >a {
+    display: grid;
+    grid-area: mid;
+    font-size: 1.0em;
+    font-weight: 600;
+    align-content: center;
+    line-height: 56px;
+}
+.middleFooter >h1 {
+    margin-top: 10px;
+}
+.rightFooter {
+    grid-area: rit;
+    justify-content: center;
+    text-align: center;
+    padding-top: 50px;
+    background-color:rgb(179, 152, 118);
+}
+.rightFooter > label {
+    display: grid;
+    font-size: 1.0em;
+    font-weight: 600;
+    line-height: 56px;
+    align-content: center;
+}
+.rightFooter >h1 {
+    margin-top: 10px;
+}
+#bottom {
+    display: grid;
+    grid-area: cop;
+    justify-items: center;
+    align-items: center;
+    border-top: 1px solid rgb(196, 184, 184);
+    background-color:rgb(179, 152, 118);
+}
+@media(max-width:1250px) {
+    .content >h1{
+        margin-left: 40px;
+    }
+    .content >p {
+        font-size: 1.2em;
+        margin-left: 20px;
+        line-height: 30px;
+    }
+    .dot {
+        display: none;
+    }
+}
+@media(max-width: 768px) 
+{
+  html {
+      font-size: 12px;
+  } 
+  .mySlides {
+      width: 100%;
+  } 
+  .prev, .next {
+     margin-top: -180px;
+  }
+  .next {
+      margin-left: 84%;
+  }
+  #home > h1 {
+    margin-top:-50px;
+    font-size: 2.6em;
+}
+#home >h3 {
+    margin-top: -100px;
+    font-size: 1.6em;
+}
+#text > h1 {
+    font-size: 1.2em;
+}
+  #longImg {
+    margin-bottom: 0;
+    margin-top: 0;
+    text-align: center;
+}
+.long {
+    height: 350px;
+    width:250px;
+    text-align: center;
+}
+#about {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-areas: 
+    "lon"
+    "con";
+}
+.content > h1 {
+    margin-top: 10px;
+    text-align: center;
+    margin-left: 0;
+}
+.content >p {
+    margin-top: 10px;
+    text-align: center;
+    font-size: 1.4em;
+    line-height: 25px;
+}
+.social {
+    height: 32px;
+    width: 32px;
+    margin-left: -10px;
+}
+#services {
+    justify-items: center;
+}
+#facilities {
+    margin-left: 75px;
+}
+#map {
+    width: 100px;
+    height: 175px;
+}
+}

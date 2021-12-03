@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap"
+      rel="stylesheet">
+    <link rel="stylesheet" href="css/app.css">
+    <title>My Grid</title>
+</head>
+<body onload="SetYear();">
+      <div id="socialIcons">
+         <img class="social" src="assets/icons/instagram-64-black.png"> 
+         <img class="social" src="assets/icons/pinterest-64-black.png">
+         <img class="social" src="assets/icons/facebook-64-black.png"> 
+      </div>
+
+  <div id="grid">
+      
+        <div id="logo">
+              <h1>Beauty</h1>
+              <h3>center</h3>
+        </div>
+        <div id= "nav">
+              <a href="#home" title="home">Home</a>
+              <a href="#about" title="about">About</a>
+              <a href="#services" title="servives">Services</a>
+              <a href="#offers" title="offers">Offers</a>
+        </div>
+
+        <!-- Slider -->
+          <div id="home">
+                <h1>Welcome</h1>
+                <h3>to our center</h3> 
+                    
+              <img class="mySlides" src="assets/images/slide1.jpg" alt="hom">
+              <img class="mySlides" src="assets/images/slide2.jpg" alt="hom">
+              <img class="mySlides" src="assets/images/slide3.jpg" alt="hom">
+         </div>
+            
+         <div class="prev" onclick="plusSlides(-1)">&#10094;</div>
+         <div class="next" onclick="plusSlides(1)">&#10095;</div>
+          <!-- the dots -->
+            <div style="text-align:center">
+                  <span class="dot" onclick="currentSlide(1)"></span>
+                  <span class="dot" onclick="currentSlide(2)"></span>
+                  <span class="dot" onclick="currentSlide(3)"></span>
+            </div>
+            
+            <!-- About -->
+          <section id="about">
+                  <div class="content">
+                        <h1>About Us</h1>
+                        <p>Beauty Salon offers<br>
+                        experiencedand professional<br>
+                        employees thatwill take care<br> 
+                        of your beauty, using organic<br>
+                        products for your treatment.<br>
+                        We aim to provide you a relaxing<br> 
+                        and enjoyable experience at our<br>
+                        Beauty Salon.
+                        </p>
+                  </div>
+                  <div id="longImg">
+                        <img class="long"src="assets/images/longImg.jpg" alt="lon">
+                  </div>
+        </section>
+            <div id="services">
+                  <h1>Our Services</h1> 
+            </div>
+            <!-- Facilities -->
+        <div id="facilities">
+            <div id="hairCut">
+                  <div class="cover cover-one">
+                           <img src="assets/images/hairCut.jpg">
+                        <div class="mask">
+                              <h2>Hair Cut</h2>
+                                    <p>we offer a stylish<br>
+                                    hair cut with blow dry,<br>
+                                    hair treatment, and hair<br>
+                                    straightening
+                                    </p>
+                        </div>
+                  </div>
+            </div>
+
+            <div id="color">
+                  <div class="cover cover-one">
+                           <img src="assets/images/hairColor.jpg">
+                        <div class="mask">
+                              <h2>Hair Color</h2>
+                                    <p>We are delighted to<br>
+                                    offer you the best<br>
+                                    service in hair color& <br>
+                                    style,a result of shiny<br>
+                                    hair using keratin.
+                                    
+                                    </p>
+                        </div>
+                  </div>  
+            </div>
+
+            <div id="facial"> 
+                  <div class="cover cover-one">
+                           <img src="assets/images/facialScrup.jpg">
+                        <div class="mask">
+                              <h2>Face Treatment</h2>
+                                    <p>if you are seeking for <br>
+                                    a bright skin, our experts<br>
+                                    are able to provide the right<br>
+                                    treatment, using organic products
+                                    </p>
+                        </div>
+                  </div> 
+            </div>
+
+            <div id="message">
+                  <div class="cover cover-one">
+                           <img src="assets/images/bodyMessage.jpg">
+                        <div class="mask">
+                              <h2>Body Message</h2>
+                                    <p>you can spend a relaxing<br>
+                                    day in our center,relieve<br>
+                                    your entire body, and remove<br>
+                                    stress, with full body message.<br>
+                                    
+                                    </p>
+                        </div>
+                  </div>
+            </div>
+        </div>
+            <div id="text">
+                  <h1>Stylish hair cut</h1>
+                  <h1>Trending colors</h1>
+                  <h1>Facial treatment</h1>
+                  <h1>Body message</h1>
+            </div>
+
+            <div id="offers">
+                  <h1>Our Offers</h1>
+            </div>
+            <!-- Extra facilities -->
+            <section id="extraFacilities">
+                  <div class="pictures">
+                        <img class="extra" src="assets/images/henna.jpg" alt="henna">
+                        <img class="extra" src="assets/images/products.jpg" alt="product"> 
+                        <img class="extra" src="assets/images/minicure&pedi.jpg" alt="minicure"> 
+                  </div>
+            </section> 
+            <!-- Footer --> 
+        <footer>
+            <div class="leftFooter">
+                    <h1>Beauty Salon</h1>
+                    <h3>Our Location</h3>
+               <iframe id="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2916.742803950729!2d-81.28085978452249!3d43.02580047914784!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882eee4350a72e43%3A0xcb7dd9faacadb9d1!2sCF%20Masonville%20Place!5e0!3m2!1sen!2sca!4v1617605813372!5m2!1sen!2sca"
+                  width="200" height="150" style="border:0;" allowfullscreen="" loading="lazy">
+               </iframe>
+            </div>
+            <div class="middleFooter">
+                    <h1>Navigation</h1>
+                 <a href="#home"title="home">Home</a>
+                 <a href="#about"title="about">About</a>
+                 <a href="#services"title="services">Services</a>
+                 <a href="#offers"title="offers">Offers</a>
+            </div>
+            <div class="rightFooter">
+                    <h1>Contact</h1>
+                 <label for="phone">1-654-2109</label>
+                 <label for="email">beauty@gmail.ca</label>
+                 <label for="address">Richmond Street<br>London On.</label>
+            </div>
+        </footer>
+            <div id="bottom">
+                  <p>&copy;</p>
+            </div>
+  </div>
+    
+    <script src="scripts/app.js"></script>
+</body>
+</html>
+
